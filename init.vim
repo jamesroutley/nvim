@@ -23,6 +23,12 @@ Plug 'w0rp/ale'
 " Vim Go: Golang development
 Plug 'fatih/vim-go'
 
+" NERDTree: file explorer
+Plug 'scrooloose/nerdtree'
+
+" Vim Go: IDE-style support for Golang
+Plug 'fatih/vim-go'
+
 " Initialise plugin system
 call plug#end()
 
@@ -49,7 +55,7 @@ map <silent> <leader><cr> :noh<cr>
 " Make new netrw window 15% size of current window
 let g:netrw_winsize = 15
 " Open netrw Left Explorer with ,n
-nmap <leader>n :Lex<cr>
+" nmap <leader>n :Lex<cr>
 " Display the current directory in the list
 let g:netrw_liststyle = 3
 
@@ -75,3 +81,9 @@ set clipboard=unnamed
 nnoremap ˙ gT
 nnoremap ¬ gt
 nnoremap T :tabnew<cr>
+
+" Show nerdtree
+map <leader>n :NERDTreeToggle<cr>
+
+" Run goimports on save
+:let g:go_fmt_command = "goimports"
