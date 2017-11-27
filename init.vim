@@ -70,3 +70,8 @@ set colorcolumn=80
 
 " Copy to/from the macOS clipboard
 set clipboard=unnamed
+
+" Simplify using tabs
+nnoremap ˙ gT
+nnoremap ¬ gt
+nnoremap T :tabnew<cr>
