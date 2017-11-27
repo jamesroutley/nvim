@@ -62,5 +62,11 @@ set number
 " Search behaviour
 " Ignore case when searching
 set ignorecase
-" Except when the search query contains a capital letter
+" Except when the search query contains a capital letter	
 set smartcase
+
+" Colour at column 80
+set colorcolumn=80
+
+" Copy to/from the macOS clipboard
+set clipboard=unnamed
