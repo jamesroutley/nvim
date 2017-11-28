@@ -85,5 +85,7 @@ nnoremap T :tabnew<cr>
 " Show nerdtree
 map <leader>n :NERDTreeToggle<cr>
 
-" Run goimports on save
-:let g:go_fmt_command = "goimports"
+" Custom ALE linters
+:let g:ale_linters = {
+\	'go': ['goimports', 'go build']
+\}
