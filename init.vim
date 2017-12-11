@@ -24,7 +24,10 @@ Plug 'w0rp/ale'
 Plug 'fatih/vim-go'
 
 " NERDTree: file explorer
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
+"
+" Vim Vinegar: Simplify netrw
+Plug 'tpope/vim-vinegar'
 
 " Vim Go: IDE-style support for Golang
 Plug 'fatih/vim-go'
@@ -51,13 +54,14 @@ set splitright
 " Hide search highlights with ,<cr>
 map <silent> <leader><cr> :noh<cr>
 
-" netrw settings
-" Make new netrw window 15% size of current window
-let g:netrw_winsize = 15
-" Open netrw Left Explorer with ,n
-" nmap <leader>n :Lex<cr>
-" Display the current directory in the list
-let g:netrw_liststyle = 3
+" custom netrw setting disabled while I try out vinegar
+" " netrw settings
+" " Make new netrw window 15% size of current window
+" let g:netrw_winsize = 15
+" " Open netrw Left Explorer with ,n
+" " nmap <leader>n :Lex<cr>
+" " Display the current directory in the list
+" let g:netrw_liststyle = 3
 
 " Colorscheme
 color dracula
@@ -83,7 +87,7 @@ nnoremap ¬ gt
 nnoremap T :tabnew<cr>
 
 " Show nerdtree
-map <leader>n :NERDTreeToggle<cr>
+" map <leader>n :NERDTreeToggle<cr>
 
 " Custom ALE linters
 :let g:ale_linters = {
