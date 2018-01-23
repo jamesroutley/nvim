@@ -86,8 +86,8 @@ nnoremap ˙ gT
 nnoremap ¬ gt
 nnoremap T :tabnew<cr>
 
-" Open a new vertial split with '='
-nnoremap = :vnew<cr>
+" Open the current file in a new vertial split with '='
+nnoremap = :vsplit<cr>
 
 " Show nerdtree
 " map <leader>n :NERDTreeToggle<cr>
