@@ -23,14 +23,14 @@ Plug 'w0rp/ale'
 " Vim Go: Golang development
 Plug 'fatih/vim-go'
 
-" NERDTree: file explorer
-" Plug 'scrooloose/nerdtree'
-"
 " Vim Vinegar: Simplify netrw
 Plug 'tpope/vim-vinegar'
 
-" Vim Go: IDE-style support for Golang
-Plug 'fatih/vim-go'
+" Goyo: distraction-free writing
+Plug 'junegunn/goyo.vim'
+
+" Logbook: take note
+Plug 'jamesroutley/logbook.vim'
 
 " Initialise plugin system
 call plug#end()
@@ -94,12 +94,14 @@ nnoremap = :vsplit<cr>
 
 " Custom ALE linters
 :let g:ale_linters = {
-\	'go': ['goimports', 'go build']
+\	'go': ['goimports', 'go build'],
+\	'markdown': []
 \}
 
 " Custom ALE fixers
 :let g:ale_fixers = {
-\	'go': ['goimports']
+\	'go': ['goimports'],
+\	'python': ['yapf']
 \}
 
 let g:ale_fix_on_save = 1
