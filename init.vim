@@ -103,3 +103,6 @@ nnoremap = :vsplit<cr>
 \}
 
 let g:ale_fix_on_save = 1
+
+" Wrap markdown text at column 80
+au BufRead,BufNewFile *.md setlocal textwidth=80
