@@ -32,6 +32,12 @@ Plug 'junegunn/goyo.vim'
 " Logbook: take note
 Plug 'jamesroutley/logbook.vim'
 
+" Pico8 syntax
+Plug 'justinj/vim-pico8-syntax'
+
+" Automatically set tabstop
+Plug 'tpope/vim-sleuth'
+
 " Initialise plugin system
 call plug#end()
 
