@@ -36,7 +36,13 @@ Plug 'jamesroutley/logbook.vim'
 Plug 'justinj/vim-pico8-syntax'
 
 " Automatically set tabstop
-Plug 'tpope/vim-sleuth'
+" Plug 'tpope/vim-sleuth'
+
+" Fugitive: git wrapper
+Plug 'tpope/vim-fugitive'
+
+" Rhubarb: GitHub extension for fugitive
+Plug 'tpope/vim-rhubarb'
 
 " Initialise plugin system
 call plug#end()
