@@ -66,15 +66,6 @@ set splitright
 " Hide search highlights with ,<cr>
 map <silent> <leader><cr> :noh<cr>
 
-" custom netrw setting disabled while I try out vinegar
-" " netrw settings
-" " Make new netrw window 15% size of current window
-" let g:netrw_winsize = 15
-" " Open netrw Left Explorer with ,n
-" " nmap <leader>n :Lex<cr>
-" " Display the current directory in the list
-" let g:netrw_liststyle = 3
-
 " Colorscheme
 color dracula
 
@@ -100,9 +91,6 @@ nnoremap T :tabnew<cr>
 
 " Open the current file in a new vertial split with '='
 nnoremap = :vsplit<cr>
-
-" Show nerdtree
-" map <leader>n :NERDTreeToggle<cr>
 
 " Custom ALE linters
 :let g:ale_linters = {
