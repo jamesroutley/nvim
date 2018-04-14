@@ -95,7 +95,8 @@ nnoremap = :vsplit<cr>
 " Custom ALE fixers
 :let g:ale_fixers = {
 \	'go': ['goimports'],
-\	'python': ['yapf']
+\	'python': ['yapf'],
+\	'javascript': ['prettier']
 \}
 
 let g:ale_fix_on_save = 1
