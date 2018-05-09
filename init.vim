@@ -35,9 +35,6 @@ Plug 'jamesroutley/logbook.vim'
 " Pico8 syntax
 Plug 'justinj/vim-pico8-syntax'
 
-" Automatically set tabstop
-" Plug 'tpope/vim-sleuth'
-
 " Fugitive: git wrapper
 Plug 'tpope/vim-fugitive'
 
@@ -109,3 +106,6 @@ let g:ale_fix_on_save = 1
 
 " Wrap markdown text at column 80
 au BufRead,BufNewFile *.md setlocal textwidth=80
+
+" Show live search and replace
+set inccommand=nosplit
