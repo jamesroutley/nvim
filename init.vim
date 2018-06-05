@@ -41,11 +41,18 @@ Plug 'tpope/vim-fugitive'
 " Rhubarb: GitHub extension for fugitive
 Plug 'tpope/vim-rhubarb'
 
+" FZF: fuzzy file finding
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+" Jinja2 syntax highlighting
+Plug 'Glench/Vim-Jinja2-Syntax'
+
 " Initialise plugin system
 call plug#end()
 
-" Set the leader key to be comma
-let mapleader = ","
+" Set the leader key to be space
+let mapleader = " "
 
 " Quickly save with ,w
 nmap <leader>w :w!<cr>
@@ -107,5 +114,9 @@ let g:ale_fix_on_save = 1
 " Wrap markdown text at column 80
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
-" Show live search and replace
+" Enable live update search/replace
 set inccommand=nosplit
+
+" Nunjucks syntax highlighting
+" https://stackoverflow.com/a/28117335/4129860
+au BufRead,BufNewFile *.njk set filetype=jinja
