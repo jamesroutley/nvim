@@ -45,6 +45,9 @@ Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+" CtrlSF: searching
+Plug 'dyng/ctrlsf.vim'
+
 " Jinja2 syntax highlighting
 Plug 'Glench/Vim-Jinja2-Syntax'
 
