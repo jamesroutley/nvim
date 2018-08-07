@@ -123,3 +123,6 @@ set inccommand=nosplit
 " Nunjucks syntax highlighting
 " https://stackoverflow.com/a/28117335/4129860
 au BufRead,BufNewFile *.njk set filetype=jinja
+
+" 24 bit colour
+set termguicolors
