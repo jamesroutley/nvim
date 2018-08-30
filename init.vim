@@ -48,6 +48,9 @@ Plug 'junegunn/fzf.vim'
 " CtrlSF: searching
 Plug 'dyng/ctrlsf.vim'
 
+" Minisnip: code snippets
+Plug 'KeyboardFire/vim-minisnip'
+
 " Jinja2 syntax highlighting
 Plug 'Glench/Vim-Jinja2-Syntax'
 
@@ -126,3 +129,13 @@ au BufRead,BufNewFile *.njk set filetype=jinja
 
 " 24 bit colour
 set termguicolors
+
+" Switch focus to CtrlSF pane when searching is finished
+let g:ctrlsf_auto_focus = {
+\ 	"at" : "done",
+\ 	"duration_less_than": 1000
+\ }
+
+" Bash-style autocomplete
+set wildmode=longest,list,full
+set wildmenu
