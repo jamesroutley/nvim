@@ -137,5 +137,6 @@ let g:ctrlsf_auto_focus = {
 \ }
 
 " Bash-style autocomplete
+" https://stackoverflow.com/a/526940/4129860
 set wildmode=longest,list,full
 set wildmenu
