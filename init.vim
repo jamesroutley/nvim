@@ -54,6 +54,9 @@ Plug 'KeyboardFire/vim-minisnip'
 " Jinja2 syntax highlighting
 Plug 'Glench/Vim-Jinja2-Syntax'
 
+" Editorconfig: editor configuration
+Plug 'editorconfig/editorconfig-vim'
+
 " Initialise plugin system
 call plug#end()
 
